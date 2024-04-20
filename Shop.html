@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+		font-family: Arial;
+		margin: 0;
+		background-image: url('background.webp');
+		height: 100%;
+    background-repeat:no-repeat;  
+    background-size: cover;
+  }
+.header {
+		padding: 10px;
+		text-align: center;
+		background: #1abc9c;
+		color: rgb(0, 0, 0);
+		font-size: 30px;
+	    font-stretch:ultra-expanded;
+      background-image:url('multiple.jpg');
+		background-repeat:repeat;
+		background-size:contain;
+		height: 200px;
+		
+}
+.header img {
+			float: left;
+			width: 140px;
+			height: 140px;
+ 
+}
+.content {
+			padding:20px;
+			text-align: center
+}
+
+
+
+
+
+
+ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0)
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(233, 226, 214)
+}
+
+table, th, td {
+  border:4px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  padding:10px;
+  
+}
+
+#myTable{
+margin-left:auto;
+margin-right:auto;
+}
+tr:nth-child(even) {
+  background-repeat: no-repeat;
+}
+tr:nth-child(odd) {
+  background-repeat: no-repeat;
+}
+p{
+	text-align:center}
+	
+</style>
+
+<head>
+<title>100 K</title>
+<link rel="icon" type="imgage/favicon" href="Drakeicon.png" />
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<div class="header">
+	
+  <h1 style="text-decoration:underline">Shop</h1>
+  
+</div>
+
+<p><button style="background:rgb(23, 202, 6);width:60px;height:40px;border-radius: 12px;" onclick="sortTable()">Sort</button></p>
+<div class="content">
+  <table id="myTable">
+  <tr>
+	<th>Year</th>
+    <th>Albums</th>
+    <th>Tracklist</th>
+	<th>Price</th>
+	<th>Total</th>
+	
+  
+  </tr>
+  <tr style="height:200px">
+	<td>2011</td>
+    <td><img src="tekecare.jpg"></td>
+    <td style="text-decoration:none">
+      <li>RED DEVIL STRING</li>
+      
+      <br><h2>R10.00</h2><br></td>
+	<td>
+	<input type="number" id="takecare" value="">
+	<br><button onclick="takecare()">Buy</button><br>
+	</td>
+	<td><br><h2><p id="album1"></p></h2><br></td>
+	
+  </tr>
+  <tr>
+	<td>2018</td>
+    <td><img src="scorpion.jpg"></td>
+	<td>
+    <li>Survival</li>
+    <li>Nonstop</li>
+    <li>Elevate</li>
+    <li>Emotionless</li>
+    <li>God's Plan</li>
+    <li>I'm Upset</li>
+    <li>8 Out Of 10</li>
+    <br>
+    <h2>R245.00</h2>
+    <br></td>
+	<td>
+	<input type="number" id="scorpion" value=""><br>
+	<button onclick="scorpion()">Buy</button><br>
+	</td>
+	<td><br><h2><p id="album2"></p></h2><br></td>
+
+    
+  </tr>
+  <tr>
+	<td>2016</td>
+    <td><img src="views.jpg"></td>
+    <td>
+      <li>Keep The Family Close</li>
+      <li>9</li>
+      <li>U With Me?</li>
+      <li>Feel No Ways</li>
+      <li>Hype</li>
+      <li>With U</li>
+      <li>Redemption</li>
+      <br><h2>R1354.00</h2><br></td>
+	<td>
+	<input type="number" id="views" value="">
+	<br><button onclick="views()">Buy</button><br>
+	</td>
+	<td><br><h2><p id="album3"></p><h2><br></td>
+	
+    
+  </tr>
+   <tr>
+   <td>2009</td>
+    <td><img src="fargone.png"></td>
+    <td>
+      <li>List Of Life</li>
+      <li>Call It Off</li>
+      <li>November 18th</li>
+      <li>A night Off </li>
+      <li>Say What's Real</li>
+      <li>I'm Upset</li>
+      <li>8 Out Of 10</li>
+      <br><h2>R209.45</h2><br></td>
+	<td>
+	<input type="number" id="sofargone" value="">
+	<br><button onclick="sofargone()">Buy</button><br>
+	</td>
+	<td><br><h2><p id="album4"></p></h2><br></td>
+	
+    
+  </tr>
+
+   <tr>
+	<td>2015</td>
+    <td><img src="toolate.jpg"></td>
+    <td>if you're reading this it's too late<br><h2>R100.00<h2><br></td>
+	<td>
+	<input type="number" id="toolate" value="">
+	<br><button onclick="toolate()">Buy</button><br>
+	</td>
+	<td><br><h2><p id="album5"></p></h2><br></td>
+	
+  </tr>
+
+  <tr>
+    <td>2010</td>
+      <td><img src="successful.jpg"></td>
+      <td>Successful<br><h2>R242.00<h2><br></td>
+    <td>
+    <input type="number" id="Successful" value="">
+    <br><button onclick="successful()">Buy</button><br>
+    </td>
+    <td><br><h2><p id="album6"></p></h2><br></td>
+    
+    </tr>
+
+    <tr>
+      <td>2022</td>
+        <td><img src="nevermind.jpg"></td>
+        <td>honestly,nevermind<br><h2>R100.00<h2><br></td>
+      <td>
+      <input type="number" id="nevermind" value="">
+      <br><button onclick="nevermind()">Buy</button><br>
+      </td>
+      <td><br><h2><p id="album7"></p></h2><br></td>
+      
+      </tr>
+
+      <tr>
+        <td>2021</td>
+          <td><img src="certified.jpg"></td>
+          <td>certified lover boy<br><h2>R100.00<h2><br></td>
+        <td>
+        <input type="number" id="loverboy" value="">
+        <br><button onclick="loverboy()">Buy</button><br>
+        </td>
+        <td><br><h2><p id="album8"></p></h2><br></td>
+        
+        </tr>
+
+        <tr>
+          <td>2017</td>
+            <td><img src="morelife.jpg"></td>
+            <td>more Life<br><h2>R100.00<h2><br></td>
+          <td>
+          <input type="number" id="morelife" value="">
+          <br><button onclick="morelife()">Buy</button><br>
+          </td>
+          <td><br><h2><p id="album9"></p></h2><br></td>
+          
+          </tr>
+
+          <tr>
+            <td>2010</td>
+              <td><img src="later.jpg"></td>
+              <td>Thank me Later<br><h2>R100.00<h2><br></td>
+            <td>
+            <input type="number" id="later" value="">
+            <br><button onclick="later()">Buy</button><br>
+            </td>
+            <td><br><h2><p id="album10"></p></h2><br></td>
+            
+            </tr>
+
+            <tr>
+              <td>2007</td>
+                <td><img src="comeback.jpg"></td>
+                <td>Comeback Season<br><h2>R100.00<h2><br></td>
+              <td>
+              <input type="number" id="comeback" value="">
+              <br><button onclick="comeback()">Buy</button><br>
+              </td>
+              <td><br><h2><p id="album11"></p></h2><br></td>
+              
+              </tr>
+
+              <tr>
+                <td>2015</td>
+                  <td><img src="graduate.jpg"></td>
+                  <td>The Graduate<br><h2>R100.00<h2><br></td>
+                <td>
+                <input type="number" id="graduate" value="">
+                <br><button onclick="graduate()">Buy</button><br>
+                </td>
+                <td><br><h2><p id="album12"></p></h2><br></td>
+                
+                </tr>
+  
+  
+</table>
+</div>
+<script>
+
+function takecare(){
+var x = document.getElementById("takecare").value * 10;
+document.getElementById("album1").innerHTML="R" + x + " " +"Confirmed";
+}
+function scorpion(){
+var x = document.getElementById("scorpion").value * 245;
+document.getElementById("album2").innerHTML="R" + x + " " +"confirmed";
+}
+function views(){
+var x = document.getElementById("views").value * 1354;
+document.getElementById("album3").innerHTML="R" + x + " " +"confirmed";
+}
+function sofargone(){
+var x = document.getElementById("sofargone").value * 209.45;
+document.getElementById("album4").innerHTML="R" + x + " " +"confirmed";
+}
+function toolate(){
+var x = document.getElementById("toolate").value * 100;
+document.getElementById("album5").innerHTML="R" + x + " " +"confirmed";
+}
+function successful(){
+var x = document.getElementById("successful").value * 100;
+document.getElementById("album6").innerHTML="R" + x + " " +"confirmed";
+}
+function nevermind(){
+var x = document.getElementById("nevermind").value * 100;
+document.getElementById("album7").innerHTML="R" + x + " " +"confirmed";
+}
+function loverboy(){
+var x = document.getElementById("loverboy").value * 100;
+document.getElementById("album8").innerHTML="R" + x + " " +"confirmed";
+}
+function morelife(){
+var x = document.getElementById("morelife").value * 100;
+document.getElementById("album9").innerHTML="R" + x + " " +"confirmed";
+}
+function later(){
+var x = document.getElementById("later").value * 100;
+document.getElementById("album10").innerHTML="R" + x + " " +"confirmed";
+}
+function comeback(){
+var x = document.getElementById("comeback").value * 100;
+document.getElementById("album11").innerHTML="R" + x + " " +"confirmed";
+}
+function graduate(){
+var x = document.getElementById("graduate").value * 100;
+document.getElementById("album12").innerHTML="R" + x + " " +"confirmed";
+}
+//sort :(
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+   
+for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      
+ if (Number(x.innerHTML) > Number(y.innerHTML)) {
+       shouldSwitch = true;
+        break;
+ }
+ }
+ if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+}
+}
+}
+</script>
+</body>
+</html>

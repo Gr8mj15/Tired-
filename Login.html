@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+  <title>100 K</title>
+  <link rel="icon" type="img/favicon" href="Drakeicon.png" />
+</head>
+<style>
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-position: center;
+   background-image: url('background.webp');
+   background-repeat:no-repeat;  
+   background-size: cover; 
+   min-height: 75%;
+  height: 850px;
+}
+
+#holder {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-image: url('4030.webp');
+   background-repeat:no-repeat;  
+   background-size: cover; 
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+}
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(10, 255, 2);
+  background-color: rgb(43, 255, 0);
+  opacity: 0;
+}
+
+#error-msg-second-line {
+  display: block;
+}
+
+#login {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.loginfield::placeholder {
+  color: #3a3a3a;
+}
+
+.loginfield {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+}
+#register{
+			 width: 21%;
+			padding: 7px;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			font-weight: bold;
+			background-color: #3a3a3a;
+			cursor: pointer;
+			outline: none;
+
+
+}
+img{ 
+		text-align: center;
+		margin: 20px 0 12px 0;
+		position: relative;
+		width: 60%;
+		border-radius: 10%;
+}
+
+
+
+
+</style>
+<body>
+  <main id="holder">
+    <h1 id="login-header">Login</h1>
+	
+    <div id="login-error-msg-holder">
+      <p id="error-msg">wrong Password <span id="error-msg-second-line">or Username</span></p>
+    </div>
+    
+    <form id="login">
+      <input type="text" name="username" id="username-field" class="loginfield" placeholder="Username">
+      <input type="password" name="password" id="password" class="loginfield" placeholder="Password">
+      <input type="submit" value="Login" id="submit">
+    </form>
+  <input type="submit" value="Register" id ="register">
+  </main>
+  
+  <script>
+  
+  var loginForm = document.getElementById("login");
+var loginButton = document.getElementById("submit");
+var loginErrorMsg = document.getElementById("error-msg");
+
+loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    var username = loginForm.username.value;
+    var password = loginForm.password.value;
+
+    if (username === "Drizzy" && password === "Lover Boy") {
+        alert("logged in."); 
+        location.reload();onclick = function(){
+	location.href = "Home_index.html";
+	};
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+})
+  document.getElementById("register").onclick = function () {
+        location.href = "Registration.html";
+    };
+	
+  </script>
+</body>
+
+</html>
+

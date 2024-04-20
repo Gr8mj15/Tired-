@@ -1,0 +1,17 @@
+h1{
+color:Black:;
+Font-family:Candara;
+} 
+body{
+	text-align:center;
+	color:white;
+    background-image: url('The boondocks.jpg');
+    background-repeat:no-repeat;
+	background-repeat:no-repeat;  
+    background-size: cover; 
+    min-height: 75%;
+    padding:5px;
+    Font-family:Candara;
+    Font-size:18px	
+}
+
